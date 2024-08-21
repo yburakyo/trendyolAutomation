@@ -9,7 +9,7 @@ Feature: Trendyol Automation
     Given user opened trendyol.com on their browser
     When the main page opens properly
     And user attempts to login with wrong credentials twice
-    And user searches for "laptop" in the searchbox
+    And user searches for keyword in the searchbox
     And user clicks a random product from results
     And user adds the product to cart
     Then the price of the product before adding to the cart should be the same after adding it to the cart
@@ -18,7 +18,7 @@ Feature: Trendyol Automation
     Given user opened trendyol.com on their browser
     When the main page opens properly
     And user attempts to login with wrong credentials twice
-    And user searches for "laptop" in the searchbox
+    And user searches for keyword in the searchbox
     And user clicks a random product from results
     And user adds the product to cart
     And user increases the number of products in the basket to two
@@ -28,7 +28,7 @@ Feature: Trendyol Automation
     Given user opened trendyol.com on their browser
     When the main page opens properly
     And user attempts to login with wrong credentials twice
-    And user searches for "laptop" in the searchbox
+    And user searches for keyword in the searchbox
     And user clicks a random product from results
     And user adds the product to cart
     And user deletes all products from the basket

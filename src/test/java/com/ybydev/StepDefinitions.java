@@ -72,8 +72,8 @@ public class StepDefinitions {
         loginPage.login();
     }
 
-    @And("user searches for {string} in the searchbox")
-    public void userSearchesForKeywordInTheSearchbox(String arg0) {
+    @And("user searches for keyword in the searchbox")
+    public void userSearchesForKeywordInTheSearchbox() {
         loginPage.enterSearchTerm();
 
         searchResultPage = loginPage.goToSearchResultPage();
