@@ -3,12 +3,15 @@ package com.ybydev.pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.Duration;
 
 public class CartPage {
     protected WebDriver driver;
     protected WebDriverWait wait;
+    private static final Logger logger = LogManager.getLogger(CartPage.class);
 
     protected String productPriceInCart;
     protected String productQuantity;
@@ -38,7 +41,7 @@ public class CartPage {
             anladimBtn = driver.findElement(By.xpath("//button[text()='Anladım']"));
             anladimBtn.click();
         } catch (TimeoutException e) {
-            System.out.println("Button 'Anladım' not found while testing.");
+            logger.warn("Button 'Anladım' not found while testing.");
         }
     }
 
