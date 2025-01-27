@@ -30,7 +30,7 @@ This project is an automated testing framework for Trendyol, an e-commerce websi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/trendyol-automation.git
+   git clone https://github.com/yburakyo/trendyol-automation.git
    ```
 2. Navigate to the project directory:
    ```bash
